@@ -22,7 +22,8 @@ window.onload = () => {
 }
 
 function showorHideImage(dropdown) {
-    
+    console.log("hi");
+
     // Get selected value of the dropdown
     let selectedProduct = dropdown.value
 
