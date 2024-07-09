@@ -8,6 +8,10 @@ window.onload = () => {
 
     // Grab the dropdown from the HTML to work
     let dropdown = document.querySelector("#productSelect");
+    //grab the button off the html yo show all doggies
+    let button = document.querySelector("#viewAll");
+
+    button.addEventListener("click", showAll);
 
     showorHideImage(dropdown);
 
@@ -21,8 +25,21 @@ window.onload = () => {
 
 }
 
+function showAll(event){
+    console.log("hey")
+
+    event.preventDefault();
+
+    showElement("#one");
+    showElement("#two");
+    showElement("#three");
+    showElement("#four");
+    showElement("#five");
+    showElement("#six");
+
+}
+
 function showorHideImage(dropdown) {
-    console.log("hi");
 
     // Get selected value of the dropdown
     let selectedProduct = dropdown.value
@@ -35,22 +52,22 @@ function showorHideImage(dropdown) {
 
     // Show the corresponding element based on selectedProduct
     switch (selectedProduct) {
-        case "male":
+        case "Rocky (Grey)":
             showElement("#one");
             break;
-        case "female":
+        case "Daisy (White)":
             showElement("#two");
             break;
-        case "Black":
+        case "Smokey (Black)":
             showElement("#three");
             break;
-        case "Fawn":
+        case "Bailey (Fawn)":
             showElement("#four");
             break;
-        case "Blue":
+        case "Bluey (Blue)":
             showElement("#five");
             break;
-        case "Blue Merle":
+        case "Vemon (Blue Merle)":
             showElement("#six");
             break;
         default:
