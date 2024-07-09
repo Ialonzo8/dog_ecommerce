@@ -1,43 +1,44 @@
 "use strict"
 
+
 let dogs = [
     {
-        title: "male",
+        title: "Rocky (Grey)",
         price: 3000,
         gender: "male",
         color: "black",
         img: "images/dog pic 3.jpg"
     },
     {
-        title: "female",
+        title: "Daisy (White)",
         price: 2000,
         gender: "female",
         color: "black",
         img: "images/dog pic 4.jpg"
     },
     {
-        title: "Black",
+        title: "Smokey (Black)",
         price: 3000,
         gender: "male",
         color: "black",
         img: "images/dog pic 5.jpg"
     },
     {
-        title: "Fawn",
+        title: "Bailey (Fawn)",
         price: 4000,
         gender: "female",
         color: "brown",
         img: "images/dog pic 6.jpg"
     },
     {
-        title: "Blue",
+        title: "Bluey (Blue)",
         price: 4000,
         gender: "female",
         color: "black",
         img: "images/dog pic10.jpg"
     },
     {
-        title: "Blue Merle",
+        title: "Vemon (Blue Merle)",
         price: 10000,
         gender: "male",
         color: "white",

@@ -112,82 +112,97 @@
     </div>
   </nav>
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <!-- Card 1 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjhfD7A3uUPwH8Sn23sF-PgNmNGDemU-VYA&s"
-            class="card-img-top img-fluid" alt="Male">
-          <div class="card-body">
-            <h5 class="card-title">Rocky (Grey)</h5>
-            <p class="card-text fw-bold">$ 3,000</p>
-            <a href="#" class="btn btn-primary">Add To Cart</a>
+  <div class="text-center mb-3">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <select id="productSelect" class="form-control"></select>
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary" id="viewAll">View All</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="allcards">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100" id="one">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjhfD7A3uUPwH8Sn23sF-PgNmNGDemU-VYA&s"
+              class="card-img-top img-fluid" alt="Male">
+            <div class="card-body">
+              <h5 class="card-title">Rocky (Grey)</h5>
+              <p class="card-text fw-bold">$ 3,000</p>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://canecorsolux.com/wp-content/uploads/2024/01/cane-corso-white-boy-lux-1024x683.jpg"
-            class="card-img-top img-fluid" alt="Female">
-          <div class="card-body">
-            <h5 class="card-title">Daisy (White)</h5>
-            <p class="card-text fw-bold">$ 2,000</p>
-            <a href="#" class="btn btn-primary">Add To Cart</a>
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100" id="two">
+            <img src="https://canecorsolux.com/wp-content/uploads/2024/01/cane-corso-white-boy-lux-1024x683.jpg"
+              class="card-img-top img-fluid" alt="Female">
+            <div class="card-body">
+              <h5 class="card-title">Daisy (White)</h5>
+              <p class="card-text fw-bold">$ 2,000</p>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card 3 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="images/dog pic 5.jpg" class="card-img-top img-fluid" alt="Black">
-          <div class="card-body">
-            <h5 class="card-title">Smokey (Black)</h5>
-            <p class="card-text fw-bold">$ 3,000</p>
-            <a href="#" class="btn btn-primary">Add To Cart</a>
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100" id="three">
+            <img src="images/dog pic 5.jpg" class="card-img-top img-fluid" alt="Black">
+            <div class="card-body">
+              <h5 class="card-title">Smokey (Black)</h5>
+              <p class="card-text fw-bold">$ 3,000</p>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card 4 -->
-      <div class="col">
-        <div class="card h-100">
-          <img
-            src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/12/cane-corso-temperament.jpeg.jpg"
-            class="card-img-top img-fluid" alt="Fawn">
-          <div class="card-body">
-            <h5 class="card-title">Bailey (Fawn)</h5>
-            <p class="card-text fw-bold">$ 4,000</p>
-            <a href="#" class="btn btn-primary">Add To Cart</a>
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card h-100" id="four">
+            <img
+              src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/12/cane-corso-temperament.jpeg.jpg"
+              class="card-img-top img-fluid" alt="Fawn">
+            <div class="card-body">
+              <h5 class="card-title">Bailey (Fawn)</h5>
+              <p class="card-text fw-bold">$ 4,000</p>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card 5 -->
-      <div class="col">
-        <div class="card h-100">
-          <img
-            src="https://images.ctfassets.net/m5ehn3s5t7ec/3A7E3dgHI3pcHG7NrJ4auj/fed741fb7b86e1f0db02e06d5f1fbdd6/Cane_Corso_Price.webp"
-            class="card-img-top img-fluid" alt="Blue Merle">
-          <div class="card-body">
-            <h5 class="card-title">Bluey (Blue)</h5>
-            <p class="card-text fw-bold">$ 10,000</p>
-            <a href="checkout.html" class="btn btn-primary">Add To Cart</a>
+        <!-- Card 5 -->
+        <div class="col">
+          <div class="card h-100" id="five">
+            <img
+              src="https://images.ctfassets.net/m5ehn3s5t7ec/3A7E3dgHI3pcHG7NrJ4auj/fed741fb7b86e1f0db02e06d5f1fbdd6/Cane_Corso_Price.webp"
+              class="card-img-top img-fluid" alt="Blue Merle">
+            <div class="card-body">
+              <h5 class="card-title">Bluey (Blue)</h5>
+              <p class="card-text fw-bold">$ 10,000</p>
+              <a href="checkout.html" class="btn btn-primary">Add To Cart</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card 6 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="images/dogpic14.jpg" class="card-img-top img-fluid" alt="Blue Merle">
-          <div class="card-body">
-            <h5 class="card-title">Venom (Blue Merle)</h5>
-            <p class="card-text fw-bold">$ 10,000</p>
-            <a href="checkout.html" class="btn btn-primary">Add To Cart</a>
+        <!-- Card 6 -->
+        <div class="col">
+          <div class="card h-100" id="six">
+            <img src="images/dogpic14.jpg" class="card-img-top img-fluid" alt="Blue Merle">
+            <div class="card-body">
+              <h5 class="card-title">Venom (Blue Merle)</h5>
+              <p class="card-text fw-bold">$ 10,000</p>
+              <a href="checkout.html" class="btn btn-primary">Add To Cart</a>
+            </div>
           </div>
         </div>
       </div>
@@ -197,6 +212,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="scripts/data/dogs.js"></script>
+  <script src="scripts/pricing.js"></script>
 
 </body>
 
