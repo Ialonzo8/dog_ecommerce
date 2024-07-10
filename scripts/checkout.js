@@ -1,47 +1,45 @@
 "use strict"
 
 window.onload = () => {
-    const cart = document.querySelector("#cartTable");
-    const cartBody = document.querySelector("#cartBody");
+    const cartTableBody = document.querySelector("#cartTableBody");
 
     populateTable(cartBody);
 }
 
 function populateTable(tbody) {
-    const x = sessionStorage.cart;
-    const cleanX = JSON.parse(x);
+    const cartData = sessionStorage.cart;
+    const cartDataAsObject = JSON.parse(cartData);
 
-    let math = 0;
-    let counter = 1;
+    let total = 0;
+    let cartItemNumber = 1;
 
-    for (let key in cleanX) {
-        let cartItem = cleanX[key];
+    for (let key in cartDataAsObject) {
+        let cartItem = cartDataAsObject[key];
 
-        math += cartItem.price;
+        total += cartItem.price;
 
-        console.log(key, cleanX[key]);
+        console.log(key, cartDataAsObject[key]);
 
         const newRow = tbody.insertRow();
 
-        // do numberlogic eventually
-        cleanBen(newRow, counter, false);
-        cleanBen(newRow, cartItem["title"], false);
-        cleanBen(newRow, cartItem["price"], true);
+        createCell(newRow, cartItemNumber, false);
+        createCell(newRow, cartItem["title"], false);
+        createCell(newRow, cartItem["price"], true);
 
-        counter++;
+        cartItemNumber++;
     }
 
-    console.log(math);
+    console.log(total);
 
     // this last bit will do for now, but this could probably be rewritten here and the lines above
     const newRow = tbody.insertRow();
 
-    cleanBen(newRow, "", false);
-    cleanBen(newRow, "Total", false);
-    cleanBen(newRow, math, true);
+    createCell(newRow, "", false);
+    createCell(newRow, "Total", false);
+    createCell(newRow, total, true);
 }
 
-function cleanBen(row, value, isItMoney) {
+function createCell(row, value, isItMoney) {
     const cell = row.insertCell();
 
     if (isItMoney) {
