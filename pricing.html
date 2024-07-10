@@ -74,7 +74,42 @@
 
     .btn-primary:hover {
       background-color: gold;
-      border-color: gold;
+      border-color: black;
+    }
+
+    /* Custom styles for the footer */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      /* Set minimum height to viewport height */
+      margin: 0;
+    }
+
+    .content {
+      flex: 1;
+      /* Allow content to expand to fill remaining vertical space */
+    }
+
+    /* Custom styles for the footer */
+    .footer {
+      margin-top: auto;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: gold;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .footer a {
+      color: gold;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: white;
     }
   </style>
 </head>
@@ -193,6 +228,12 @@
       </div>
     </div>
   </div>
+
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2024 DFW Cane Corso. All rights reserved.</span>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
