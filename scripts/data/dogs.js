@@ -1,6 +1,5 @@
 "use strict"
 
-
 let dogs = [
     {
         title: "Rocky (Grey)",
