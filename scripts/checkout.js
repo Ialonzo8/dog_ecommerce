@@ -3,7 +3,7 @@
 window.onload = () => {
     const cartBody = document.querySelector("#cartTableBody");
 
-    populateTable(cartBody);
+    populateTable(cartTableBody);
 }
 
 function populateTable(tbody) {
