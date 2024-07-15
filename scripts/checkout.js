@@ -1,7 +1,7 @@
 "use strict"
 
 window.onload = () => {
-    const cartTableBody = document.querySelector("#cartTableBody");
+    const cartBody = document.querySelector("#cartTableBody");
 
     populateTable(cartTableBody);
 }
