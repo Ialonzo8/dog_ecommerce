@@ -31,5 +31,29 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
+    position: relative;}
+/* style.css */
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    color: #6c757d; /* Adjust text color */
+}
+
+.card-img-top {
+    height: 300px; /* Adjust image height as needed */
+    object-fit: cover;
+    
 }
