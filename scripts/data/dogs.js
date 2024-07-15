@@ -37,7 +37,7 @@ let dogs = [
         img: "images/dog pic10.jpg"
     },
     {
-        title: "Vemon (Blue Merle)",
+        title: "Venom (Blue Merle)",
         price: 10000,
         gender: "male",
         color: "white",

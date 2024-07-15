@@ -77,7 +77,7 @@ function showorHideImage(dropdown) {
         case "Bluey (Blue)":
             showElement("#five");
             break;
-        case "Vemon (Blue Merle)":
+        case "Venom (Blue Merle)":
             showElement("#six");
             break;
         default:
