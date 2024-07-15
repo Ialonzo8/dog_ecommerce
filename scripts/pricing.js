@@ -26,6 +26,13 @@ window.onload = () => {
         cartAsObject = JSON.parse(sessionStorage.cart);
     }
 
+    let cardTitles = document.querySelectorAll("[id*='cardTitle']");
+
+    cardTitles.forEach((title) => {
+        let currentName = title.innerHTML;
+        title.innerHTML = `<a href="./meetme.html?name=${currentName}">${currentName}</a>`
+    });
+
     let buttons = document.querySelectorAll("[id*='cartButton']");
     console.log(buttons);
 
