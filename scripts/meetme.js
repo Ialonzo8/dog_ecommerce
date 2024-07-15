@@ -1,7 +1,7 @@
 "use strict"
 
 window.onload = () => {
-    let dogArticle = document.querySelector("#dogArticle");
+    let dogSection = document.querySelector("#dogSection");
     let urlParameters = new URLSearchParams(location.search);
     console.log(urlParameters);
     let dogName = urlParameters.get("name");
@@ -10,7 +10,7 @@ window.onload = () => {
     let dogInfo = fetchDogInfo(dogName);
     console.log(dogInfo);
 
-    displayDog(dogInfo, dogArticle);
+    displayDog(dogInfo, dogSection);
 }
 
 function fetchDogInfo(dogName) {
@@ -29,16 +29,16 @@ function fetchDogInfo(dogName) {
     return desiredDog;
 }
 
-function displayDog(dogInfo, article) {
-    article.innerHTML = `
+function displayDog(dogInfo, section) {
+    section.innerHTML = `
     <h1 class="text-center pb-5">Meet ${dogInfo.title}:</h1>
     <div class="d-flex justify-content-between">
         <aside class="w-50 px-3">
             <img src="${dogInfo.img}" class="w-100">
         </aside>
-        <article class="w-50 px-3">
+        <aside class="w-50 px-3">
             <p class="w-100">${dogInfo.bio}<p>
-        </article>
+        </aside>
     </div>
 
     `;
