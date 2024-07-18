@@ -52,19 +52,19 @@ This website is setup to sell dogs to people who need a pet and it is for anyone
 
 ## Screenshots
 
-![App Screenshot](/images/readme/homeV2.PNG)
+![App Screenshot](/images/readme/homeV2.png)
 
-![App Screenshot](/images/readme/pricingV2.PNG)
+![App Screenshot](/images/readme/pricingV2.png)
 
-![App Screenshot](/images/readme/meetmeV2.PNG)
+![App Screenshot](/images/readme/meetmeV2.png)
 
-![App Screenshot](/images/readme/checkoutV2.PNG)
+![App Screenshot](/images/readme/checkoutV2.png)
 
-![App Screenshot](/images/readme/loginV2.PNG)
+![App Screenshot](/images/readme/loginV2.png)
 
-![App Screenshot](/images/readme/registerV2.PNG)
+![App Screenshot](/images/readme/registerV2.png)
 
-![App Screenshot](/images/readme/contactusV2.PNG)
+![App Screenshot](/images/readme/contactusV2.png)
 
 
 ## Features
@@ -73,7 +73,7 @@ This website is setup to sell dogs to people who need a pet and it is for anyone
 - Pricing: List Of Dogs Available
 - Meet Me: More info about a dog
 - Checkout: Purchase Cane Corso
-- Contact Us: Information to contact me
+- Contact Us: Information to contact us
 - Register
 - Log In
 
