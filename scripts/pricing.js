@@ -20,10 +20,11 @@ window.onload = () => {
 
     dropdown.addEventListener("change", (event) => showorHideImage(event.target));
 
-    let cartAsObject = {};
+    let cartArray = [];
 
+    // this runs if an empty cart array exists in storage. Suboptimal but negligible
     if (sessionStorage.cart) {
-        cartAsObject = JSON.parse(sessionStorage.cart);
+        cartArray = JSON.parse(sessionStorage.cart);
     }
 
     let cardTitles = document.querySelectorAll("[id*='cardTitle']");
@@ -34,10 +35,9 @@ window.onload = () => {
     });
 
     let buttons = document.querySelectorAll("[id*='cartButton']");
-    console.log(buttons);
 
     buttons.forEach((button) => {
-        button.addEventListener("click", (event) => addToCart(event, cartAsObject));
+        button.addEventListener("click", (event) => addToCart(event, cartArray));
     });
 
 }
@@ -159,28 +159,27 @@ function showElement(someSelector) {
     el.style.display = "block";
 }
 
-function addToCart(event, cartAsObject) {
+function addToCart(event, cartArray) {
+    event.preventDefault();
+
     const currentButton = event.target;
     const buttonNumber = (currentButton.id[10]);
     const associatedDog = dogs[buttonNumber - 1];
 
-    let lastNumber = Object.keys(cartAsObject).length;
-
     let isItNew = true;
 
-    for (let key in cartAsObject) {
+    for (let i = 0; i < cartArray.length; i++) {
         // JavaScript, for the purposes of comparing objects, actually just compares their addresses,
-        // therefor, we stringify and then compare, since the results are not longer objects
-        if (JSON.stringify(cartAsObject[key]) == JSON.stringify(associatedDog)) {
+        // therefor, we stringify and then compare, since the results are no longer objects
+        if (JSON.stringify(cartArray[i]) === JSON.stringify(associatedDog)) {
             isItNew = false;
             break;
         }
     }
 
     if (isItNew) {
-        cartAsObject[`item${lastNumber + 1}`] = associatedDog;
-        sessionStorage.cart = JSON.stringify(cartAsObject);
-        alert(`${associatedDog.title} has been added to the cart`);
+        cartArray.push(associatedDog);
+        sessionStorage.cart = JSON.stringify(cartArray);
     } else {
         alert("this dog has already been added to the cart");
     }
