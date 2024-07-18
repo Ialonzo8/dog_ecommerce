@@ -52,19 +52,19 @@ This website is setup to sell dogs to people who need a pet and it is for anyone
 
 ## Screenshots
 
-![App Screenshot](/images/readme/homeV2.PNG)
+![App Screenshot](/images/readme/homeV2.png)
 
-![App Screenshot](/images/readme/pricingV2.PNG)
+![App Screenshot](/images/readme/pricingV2.png)
 
-![App Screenshot](/images/readme/meetmeV2.PNG)
+![App Screenshot](/images/readme/meetmeV2.png)
 
-![App Screenshot](/images/readme/checkoutV2.PNG)
+![App Screenshot](/images/readme/checkoutV2.png)
 
-![App Screenshot](/images/readme/loginV2.PNG)
+![App Screenshot](/images/readme/loginV2.png)
 
-![App Screenshot](/images/readme/registerV2.PNG)
+![App Screenshot](/images/readme/registerV2.png)
 
-![App Screenshot](/images/readme/contactusV2.PNG)
+![App Screenshot](/images/readme/contactusV2.png)
 
 
 ## Features
